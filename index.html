@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="add-expense">
+            <div class="total">
+                <p>YOUR BALANCE</p>
+                <h1 class="totalAmount">₹0</h1>
+            </div>
+            <div class="add-form">
+                <form>
+                    <div class="form-control">
+                        <label for="title">Text</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="form-control">
+                        <label for="cost">Cost</label>
+                        <input type="text" name="cost" id="cost">
+                    </div>
+                    <div class="btns">
+                        <button type="button" class="add-item-btn">ADD ITEM</button>
+                        <button type="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+            <div class="income-expense">
+                <div class="income">
+                    <div class="icon">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                    </div>
+                    <div class="income-amount amount">
+                        <p>YOUR TOTAL INCOME</p>
+                        <h1>+₹<span class="income-text">0</span></h1>
+                    </div>
+                </div>
+                <div class="expense">
+                    <div class="icon">
+                        <div class="icon-wrapper">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="expense-amount amount">
+                        <p>YOUR TOTAL EXPENSE</p>
+                        <h1>-₹<span class="expense-text">0</span></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <h1 class="title">HISTORY</h1>
+            <div class="logs">
+                <!-- <div class="log red">
+                    <p>ICE-CREAM</p>
+                    <p>₹40</p>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
